@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+
+    <title><%= title %></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+    <script src="./javascripts/CalcCntr.js"> </script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p></p>
+    <div ng-app= "Calculator" ng-controller = "CalcControl" style="background-color: lightblue;margin-top: 20px">
+      <br><br>
+      <p>&nbsp;&nbsp;&nbsp;First Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input style="background-color: #00B7FF" type="number"  ng-model="first_num" ng-required = "true"></p>
+      <p>&nbsp;&nbsp; Second Number &nbsp; <input style="background-color: #00B7FF" type="number" ng-model="second_num" ng-required = "true"></p>
+      <p>&nbsp;&nbsp; result : {{ result }} </p>
+      <button ng-click="addnum()">Add</button>
+      <button ng-click="subtractnum()">Subtract</button>
+      <button ng-click="multiplynum()">Multiply</button>
+      <button ng-click="dividenum()">Divide</button>
+      <br><br><br><br>
+    </div>
+  </body>
+</html>
