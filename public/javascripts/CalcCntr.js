@@ -9,8 +9,8 @@ app.controller('CalcControl', function($scope,$http)
         $http ({
             method: "POST",
             data: {
-                "first_num": $scope.first_num,
-                "second_num": $scope.second_num
+                "mass": $scope.mass,
+                "height": $scope.height
             },
             url: "http://localhost:3000/CalcServerCntr/add"
         }).then (function success(output)
@@ -56,8 +56,8 @@ app.controller('CalcControl', function($scope,$http)
         $http ({
             method: "POST",
             data: {
-                "first_num": $scope.first_num,
-                "second_num": $scope.second_num
+                "mass": $scope.mass,
+                "height": $scope.height
             },
             url: "http://localhost:3000/CalcServerCntr/divide"
         }).then (function success(output)

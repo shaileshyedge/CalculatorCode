@@ -3,9 +3,9 @@
  */
 var express = require('express');
 var app = express();
-exports.add = function(first_num,second_num)
+exports.add = function(mass,height)
 {
-    return first_num + second_num;
+    return mass + height;
 }
 exports.subtract = function(first_num,second_num)
 {

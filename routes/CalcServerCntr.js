@@ -5,10 +5,12 @@ var express = require('express');
 var router = express.Router();
 var serverpath = require('../BusinessLogic/CalcProcess.js');
 router.post('/add',function(req,res)
-{
-    var result = serverpath.add(req.body.first_num,req.body.second_num);
+{   console.log(req.body.mass);
+    console.log(req.body.height);
+    var result = serverpath.add(req.body.mass,req.body.height);
     res.send(String(result));
 })
+/*
 router.post('/subtract',function(req,res)
 {
     var result = serverpath.subtract(req.body.first_num,req.body.second_num);
@@ -24,4 +26,5 @@ router.post('/divide',function(req,res)
     var result = serverpath.divide(req.body.first_num,req.body.second_num);
     res.send(String(result));
 })
+*/
 module.exports = router;
