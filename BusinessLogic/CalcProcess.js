@@ -13,5 +13,5 @@ exports.add = function(mass,height)
     {text = "You are over weight. Your BMI index is "};
     if (val > 30)
     {text = "You are obese. Your BMI index is "};
-    return (text + Math.round(val));
+    return (text + val.toFixed(2));
 }
