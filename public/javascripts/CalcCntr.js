@@ -4,7 +4,7 @@
 var app = angular.module('Calculator', []);
 app.controller('CalcControl', function($scope,$http)
 {
-    $scope.addnum = function ()
+    $scope.calcbmi = function ()
     {
         $http ({
             method: "POST",

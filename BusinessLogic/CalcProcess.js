@@ -4,27 +4,14 @@
 var express = require('express');
 var app = express();
 exports.add = function(mass,height)
-{
-    return mass + height;
-}
-exports.subtract = function(first_num,second_num)
-{
-    return first_num - second_num;
-}
-
-exports.multiply = function(first_num,second_num)
-{
-    return first_num * second_num;
-}
-
-exports.divide = function(first_num,second_num)
-{   if (second_num == 0)
-    {
-        return "cannot divide by 0";
-
-    }
-    else
-    {
-    return first_num / second_num;
-    }
+{    var val = (mass * 703)/(height*144*height)
+    if (val <= 18.5 )
+    {text = "You are underweight.Your BMI value is "};
+    if (val > 18.5 && val < 24.9)
+    {text = "You are Normal weight. Your BMI index is "};
+    if (val >= 24.9)
+    {text = "You are over weight. Your BMI index is "};
+    if (val > 30)
+    {text = "You are obese. Your BMI index is "};
+    return (text + val);
 }
