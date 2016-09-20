@@ -12,7 +12,7 @@ app.controller('CalcControl', function($scope,$http)
                 "mass": $scope.mass,
                 "height": $scope.height
             },
-            url: "ec2-54-70-144-104.us-west-2.compute.amazonaws.com:3000/CalcServerCntr/add"
+            url: "http://ec2-54-70-144-104.us-west-2.compute.amazonaws.com:3000/CalcServerCntr/add"
         }).then (function success(output)
         { $scope.result = output.data;
         },function err(err)
