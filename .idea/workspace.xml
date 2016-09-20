@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/public/javascripts/CalcCntr.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6197917">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -755,7 +755,7 @@
     <entry file="file://$PROJECT_DIR$/public/javascripts/CalcCntr.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6197917">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
           <folding />
         </state>
       </provider>
